@@ -1,5 +1,7 @@
 # myBooks - παράδειγμα εφαρμογής CRUD σε Nodejs/Express με SQlite και MongoDB
 
+Κατεβάστε τον κώδικα από το [github](https://github.com/navouris/mybooks/tree/main) code -> Download ZIP
+
 ## εγκατάσταση
 δημιουργήστε φάκελο mybooks
 αποσυμπιέστε το αρχείο στον φάκελο και στη συνέχεια
