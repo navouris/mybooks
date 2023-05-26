@@ -1,0 +1,35 @@
+<h1>Διαγραφή βιβλίου</h1>
+
+<form action="/delete/{{data.bookID}}" method="POST">
+  <div class="form-horizontal">
+
+    <div class="form-group row">
+      <label class="col-form-label col-sm-2" for="Titre">Τίτλος</label>
+      <div class="col-sm-8">
+        <input readonly class="form-control" id="Titre" value="{{data.title}}" />
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-form-label col-sm-2" for="Auteur">Συγγραφείς</label>
+      <div class="col-sm-7">
+        <input readonly class="form-control" id="Auteur" value="{{data.author}}" />
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-form-label col-sm-2" for="Commentaires">Σχόλια</label>
+      <div class="col-sm-10">
+        <textarea readonly class="form-control" cols="20" id="Commentaires" maxlength="32000" rows="7">{{data.comment}}</textarea>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="col-form-label col-sm-2"></label>
+      <div class="col-sm-10">
+        <input type="submit" value="Διαγραφή" class="btn btn-default btn-danger" />
+        <a class="btn btn-outline-dark cancel" href="/books">Ακύρωση</a>
+      </div>
+    </div>
+  </div>
+</form>
